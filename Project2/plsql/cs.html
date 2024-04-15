@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="frame.css">
+    </head>
+    <body>
+        <div class="banner">
+            <h2>CONTROL STATEMENTS</h2>
+            <p>
+                <span>PL/SQL If</span><br>
+                PL/SQL supports the programming language features like conditional statements and iterative statements.<br><br>
+                Syntax: (IF-THEN statement):<br><br>
+                IF condition<br>
+                THEN<br>
+                Statement: {It is executed when condition is true}<br>
+                END IF;<br>
+                This syntax is used when you want to execute statements only when condition is TRUE.<br><br>
+                Syntax: (IF-THEN-ELSE statement):<br>
+                IF condition<br>
+                THEN<br>
+                {...statements to execute when condition is TRUE...}<br>
+                ELSE<br>
+                {...statements to execute when condition is FALSE...}<br>
+                END IF;<br>
+                This syntax is used when you want to execute one set of statements when condition is TRUE or a different set of statements when condition is FALSE.
+                <img src="cs/ifthen.png" style="height:  100px;">
+                <br><br>
+
+
+                <span>PL/SQL Loop</span><br>
+                The PL/SQL loops are used to repeat the execution of one or more statements for specified number of times. These are also known as iterative control statements.<br><br>
+                Syntax for a basic loop:<br>
+                LOOP<br>
+                Sequence of statements;<br>
+                END LOOP;
+                <br><br>
+
+                
+                <span>PL/SQL Exit Loop</span><br>
+                PL/SQL exit loop is used when a set of statements is to be executed at least once before the termination of the loop. There must be an EXIT condition specified in the loop, otherwise the loop will get into an infinite number of iterations. After the occurrence of EXIT condition, the process exits the loop.<br><br>
+                Syntax of exit loop:<br>
+                LOOP<br>
+                statements;<br>
+                EXIT;<br>
+                {or EXIT WHEN condition;}<br>
+                END LOOP;
+                <img src="cs/exit.png" style="height:  200px;"><br><br>
+
+                <span>PL/SQL While Loop</span><br>
+                PL/SQL while loop is used when a set of statements has to be executed as long as a condition is true, the While loop is used. The condition is decided at the beginning of each iteration and continues until the condition becomes false.<br><br>
+                Syntax of while loop:<br>
+                WHILE (condition)<br>
+                LOOP statements;<br>
+                END LOOP;
+                <img src="cs/while.png" style="height:  200px;"><br><br>
+
+                <span>PL/SQL For Loop</span><br>
+                PL/SQL for loop is used when when you want to execute a set of statements for a predetermined number of times. The loop is iterated between the start and end integer values. The counter is always incremented by 1 and once the counter reaches the value of end integer, the loop ends.<br><br>
+                Syntax of for loop:<br>
+                FOR counter IN initial_value .. final_value LOOP<br>
+                LOOP statements;<br>
+                END LOOP;<br><br>
+                initial_value : Start integer value<br>
+                final_value : End integer value
+                <img src="cs/for.png" style="height:  200px;"><br><br>
+
+                <span>PL/SQL GOTO Statement</span><br>
+                In PL/SQL, GOTO statement makes you able to get an unconditional jump from the GOTO to a specific executable statement label in the same subprogram of the PL/SQL block. Here the label declaration which contains the label_name encapsulated within the '<< >>' symbol and must be followed by at least one statement to execute.<br><br>
+                Syntax:<br>
+                GOTO label_name;
+                <img src="cs/goto.png" style="height:  300px;"><br><br>
+                <br>
+            </p>
+        </div>
+    </body>
+</html>

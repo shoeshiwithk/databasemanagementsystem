@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="frame.css">
+    </head>
+    <body>
+        <div class="banner">
+            <h2>DATE FUNCTION</h2>
+            <p>
+                In SQL, dates are complicated for newbies, since while working with a database, the format of the data in the table must be matched with the input data to insert. In various scenarios instead of date, datetime (time is also involved with date) is used.<br><br>
+                For storing a date or a date and time value in a database,MySQL offers the following data types:<br><br>
+
+                DATE format YYYY-MM-DD<br>
+                DATETIME format: YYYY-MM-DD HH:MI: SS<br>
+                TIMESTAMP format: YYYY-MM-DD HH:MI: SS<br>
+                YEAR format YYYY or YY<br><br>
+                Now, come to some popular functions in SQL date functions<br><br>
+            <span>1.NOW()</span><br>
+                Returns the current date and time.<br>
+                Query:<br>
+                SELECT NOW();
+            <img src="df/now.png" style="height: 200px;"><br><br>
+            <span>2.CURDATE()</span><br>
+                Returns the current date.<br>
+                Query:<br>
+                SELECT CURDATE();
+                <img src="df/curdate.png" style="height: 200px;">
+                <br><br>
+                <span>3.CURTIME()</span><br>
+                Returns the current time.<br>
+                Query:<br>
+                SELECT CURTIME();
+                <img src="df/curtime.png" style="height: 200px;">
+                <br><br>
+            <span>4.DATE()</span><br>
+                Extracts the date part of a date or date/time expression.
+                <img src="df/date.png" style="height:  170px;">
+                <br><br>
+            <span>5.DATE_ADD()</span><br>
+                Adds a specified time interval to a date.<br>
+                Syntax:<br>
+                DATE_ADD(date, INTERVAL expr type);<br>
+                Where, date - valid date expression, and expr is the number of intervals we want to add. And type can be one of the following: MICROSECOND, SECOND, MINUTE, HOUR, DAY, WEEK, MONTH, QUARTER, YEAR, etc.
+                <img src="df/dateadd.png" style="height: 170px;">
+                <br><br>
+            <span>6.DATE_SUB()</span><br>
+                Subtracts a specified time interval from a date. The syntax for DATE_SUB is the same as DATE_ADD just the difference is that DATE_SUB is used to subtract a given interval of date.
+                <img src="df/datesub.png" style="height: 170px;">
+                <br><br>
+            <span>7.DATEDIFF()</span><br>
+                Returns the number of days between two dates.<br><br>
+                8.DATEDIFF(date1, date2);<br>
+                date1 & date2- date/time expression
+                <img src="df/datediff.png" style="height: 170px;">
+                <br>
+
+            </p>
+        </div>
+    </body>
+</html>

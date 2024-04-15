@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="frame.css">
+    </head>
+    <body>
+        <div class="banner">
+            <h2>TRIGGERS</h2>            
+            <p>
+                Trigger is invoked by Oracle engine automatically whenever a specified event occurs.Trigger is stored into database and invoked repeatedly, when specific condition match. Triggers are stored programs, which are automatically executed or fired when some event occurs. Triggers are written to be executed in response to any of the following events.<br>
+                A database manipulation (DML) statement (DELETE, INSERT, or UPDATE).<br>
+                A database definition (DDL) statement (CREATE, ALTER, or DROP).<br>
+                A database operation (SERVERERROR, LOGON, LOGOFF, STARTUP, or SHUTDOWN).<br>
+                Triggers could be defined on the table, view, schema, or database with which the event is associated.<br><br>
+                <span>Creating a trigger:</span><br>
+                Syntax for creating trigger:<br>
+                CREATE [OR REPLACE ] TRIGGER trigger_name<br>
+                {BEFORE | AFTER | INSTEAD OF }<br>
+                {INSERT [OR] | UPDATE [OR] | DELETE}<br>
+                [OF col_name]<br>
+                ON table_name<br>
+                [REFERENCING OLD AS o NEW AS n]<br>
+                [FOR EACH ROW]<br>
+                WHEN (condition)<br>
+                DECLARE<br>
+                Declaration-statements<br>
+                BEGIN<br>
+                Executable-statements<br>
+                EXCEPTION<br>
+                Exception-handling-statements<br>
+                END;<br>
+                <img src="t.png" style="height:  250px;"><br><br>
+            </p>
+        </div>
+    </body>
+</html>
